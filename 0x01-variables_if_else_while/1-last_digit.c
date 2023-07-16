@@ -6,7 +6,9 @@
  *Return: Always 0.
  */
 int main(void)
-intsrand(time(0));
+{
+int n, lastd;
+srand(time(0));
 n = rand() - RAND_MAX / 2;
 if ((n % 10) > 5)
 {
