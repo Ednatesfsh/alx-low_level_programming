@@ -2,14 +2,14 @@
 #include <stdlib.h>
 #include <time.h>
 /**
- * main - Prints all single digit numbers of base 10 starting from 0,only using putchar 
- * Return: Always 0.
+  *main - prints only using putchar
+  *Return: Always (Success)
  */
 int main(void)
 {
 int y;
-for (y = 0; y < 10; y++)
-putchar((y % 10) + '0');
+for (y = 0; y < 9; y++)
+putchar(y);
 putchar('\n');
 return (0);
 }
