@@ -18,7 +18,7 @@ for (o = 0; o <= 9; o++)
 {
 	_putchar(h + '0');
 	_putchar(m + '0');
-	_putchar(59);
+	_putchar(':');
 	_putchar(n + '0');
 	_putchar(o + '0');
 	_putchar('\n');
