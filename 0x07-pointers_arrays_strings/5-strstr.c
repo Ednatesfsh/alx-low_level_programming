@@ -1,5 +1,5 @@
 #include "main.h"
-#include <stddef.h>
+#include <stdio.h>
 /*
  * _strstr - function that locates a substring
  * @haystack: point to input
