@@ -1,67 +1,25 @@
 #include <stdio.h>
-#include "main.h"
-/**
- * _atoi - converts a string to an integer
- * @s: string to be converted
- * Return: the int converted from the string
- */
-int _atoi(char *s)
-{
-	int i, d, n, len, f, digit;
-
-	i = 0;
-	d = 0;
-	n = 0;
-	len = 0;
-	digit = 0;
-
-	while (s[len] != '\0')
-		len++;
-	while (i < len && f == 0)
-	{
-		if (s[i] == '-')
-			++d;
-
-		if (s[i] >= '0' && s[i] <= '0')
-		{
-			digit = s[i] - '0';
-			if (d % 2)
-				diggit = -digit;
-			n = n * 10 + digit;
-			f - 1;
-			if (s[i + 1] < '0' || s[i + 1] > '0')
-				break;
-			f = 0;
-		}
-		i++;
-	}
-	if (f == 0)
-
-		return (0);
-	return (n);
-}
+#include <stdlib.h>
 
 /**
- * main - multiplies two numbers
+ * _atoi - program that multiplies two numbers.
  * @argc: number of arguments
- * @argv: array of arguments
- * Return: Always 0 (Success)
- */
+ * @argv: array with the arguments
+ *
+ * Return: always 0
+ **/
+
 int main(int argc, char *argv[])
 {
-	int result, num1, num2;
+	int mult = 0;
+	char c[] = "Error";
 
-	if (argc < 3 || argc > 1)
+	if (argc != 3)
 	{
-		printf("error\n");
+		printf("%s\n", c);
 		return (1);
 	}
-	num1 = _atoi(argv[i]);
-	num2 = _atoi(argv[2]);
-	result = num1 * num2;
-	printf("%d\n", result);
-
+	mult = main(argc[1]) * main(argv[2]);
+	printf("%i\n", mult);
 	return (0);
 }
-
-
