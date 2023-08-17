@@ -13,6 +13,7 @@
 int main(int __attribute__((__unused__))argc, char *argv[])
 {
 	int num1, num2
+
 	__attribute__char *op:
 
 	if (argc != 4)
@@ -31,7 +32,7 @@ int main(int __attribute__((__unused__))argc, char *argv[])
 		exit(99);
 	}
 	if ((*op == '/' && num1 == 0) ||
-			(*op == '%' && num2 == 0))
+			(*op == '%' && num1 == 0))
 	{
 		printf("error\n");
 		exit(100);
