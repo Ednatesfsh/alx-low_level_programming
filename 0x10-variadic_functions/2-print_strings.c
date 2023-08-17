@@ -3,7 +3,7 @@
 #include <stdarg.h>
 
 /**
- * prints_strings - prints strings followed by a new line
+ * print_strings - prints strings followed by a new line
  * @separator: the string to be printed
  * @n: The number of strings passed to the function
  * @...: Avariable number of strings to be printed
@@ -11,7 +11,7 @@
  * Description: if separator is NULL, it is not printed
  * If one of the strings if NULL, (nil) is printed instead
  */
-void prints_strings(const char *separator, const unsigned int n, ...)
+void print_strings(const char *separator, const unsigned int n, ...)
 {
 	va_list strings;
 	char *str;
